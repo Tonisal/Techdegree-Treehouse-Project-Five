@@ -1,0 +1,55 @@
+// colors
+
+$white:                      #fff;
+$black:                      #000;
+$malibu:                     #59ddfa;
+$emerald:                    #67cb85;
+$sunglo:                     #e2767c;
+$bittersweet:                #fb785b;
+$purple-mountains-majesty:   #927dbf;
+$riptide:                    #84E7D1;
+$pelorous:                   #45ABC8;
+$french-lilac:               #DDB3EC;
+$geraldine:                  #FB9F88;
+
+// grid-variables
+
+$grid-max-width: 1125px;
+$grid-gutter-width: 15px;
+$grid-columns: 12;
+
+// breakpoint
+
+$mediaMD: 770px;
+
+// buttons
+
+$btn-bg-color-default:   $malibu;
+$btn-bg-color-success:   $emerald;
+$btn-bg-color-error:     $sunglo;
+$btn-bg-color-warning:   $bittersweet;
+$btn-bg-color-info:      $purple-mountains-majesty;
+$btn-color:              $white;
+
+// fonts
+$font-family-normal: Helvetica, Arial, sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+
+$font-size-normal: 1.5rem;
+$font-size-lg: 2.0rem;
+$font-size-xl: 3.0rem;
+
+$font-size-input: $font-size-normal;
+$font-size-p: $font-size-normal;
+$font-size-h4: $font-size-lg;
+$font-size-h1:  $font-size-xl;
+$font-size-blockquote: $font-size-xl;
+
+
+
+$br-round-corners: 5px;
+$br-circle: 50%;

@@ -1,0 +1,36 @@
+button {
+  padding: 15px 50px;
+  border-radius: $br-round-corners;
+  width: 100%;
+  margin-bottom: 55px;
+  border: none;
+  text-transform: uppercase;
+  color: $btn-color;
+  font-size: 1.5rem;
+
+  @include mq(medium) {
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.btn--default {
+  background-color: $btn-bg-color-default;
+}
+
+.btn--success {
+  background-color: $btn-bg-color-success;
+}
+
+.btn--error {
+  background-color: $btn-bg-color-error;
+}
+
+.btn--warning {
+  background-color: $btn-bg-color-warning;
+}
+
+.btn-info {
+  background-color: $btn-bg-color-info;
+}

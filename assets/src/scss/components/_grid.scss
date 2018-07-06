@@ -1,0 +1,105 @@
+.container {
+
+  max-width: $grid-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid__row {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(medium) {
+    flex-wrap: nowrap;
+  }
+}
+
+[class^="grid__col--"] {
+  display: inline-block;
+  padding: 15px 10px;
+  border-radius: $br-round-corners;
+  margin-bottom: 5px;
+
+
+  @include mq(medium) {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.centered {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+$column-space: $grid-max-width - ($grid-gutter-width * ($grid-columns - 1));
+$column-width: $column-space / $grid-columns;
+
+@for $i from 1 through $grid-columns {
+
+  .grid__col--#{$i} {
+
+    flex-basis: 100%;
+
+    @if $i == 12 {
+      &.theme__colors {
+        background-color: $riptide;
+      }
+    }
+
+    @if $i == 8 {
+      &.theme__colors {
+        background-color: $bittersweet;
+      }
+    }
+
+    @if $i == 7 {
+      &.theme__colors {
+        background-color: $btn-bg-color-error;
+      }
+    }
+
+    @if $i == 6 {
+      &.theme__colors {
+        background-color: $pelorous;
+      }
+    }
+
+    @if $i == 5 {
+      &.theme__colors {
+        background-color: $btn-bg-color-success;
+      }
+    }
+
+    @if $i == 4 {
+      &.theme__colors {
+        background-color: $malibu;
+      }
+    }
+
+    @if $i == 3{
+      &.theme__colors {
+        background-color: $purple-mountains-majesty;;
+      }
+    }
+
+    @include mq(medium) {
+
+      $valuePx: ($column-width * $i) + (($i - 1) * $grid-gutter-width);
+      $valuePercent: $valuePx / $grid-max-width;
+      flex-basis: percentage($valuePercent);
+
+      &.theme__colors {
+        text-align: center;
+      }
+    }
+  }
+}

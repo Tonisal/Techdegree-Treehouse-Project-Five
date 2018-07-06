@@ -1,0 +1,10 @@
+
+//media query mixin
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == "medium" {
+    @media(min-width: $mediaMD) {
+      @content;
+    }
+  }
+}

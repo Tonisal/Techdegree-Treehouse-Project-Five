@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+  @include mq(medium) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav__item {
+    display: flex;
+  }
+
+  a {
+    padding: {
+      top: 15px;
+      right: 10px;
+      bottom: 15px;
+      left: 10Px;
+    }
+    flex-basis: 100%;
+    text-align: center;
+    border-radius: $br-round-corners;
+    font-size: $font-size-lg;
+
+    &:hover {
+      background-color: $riptide;
+      color: $white;
+    }
+  }
+}

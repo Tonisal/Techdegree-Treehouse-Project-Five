@@ -1,0 +1,27 @@
+
+
+.headline--primary {
+  font-size: $font-size-h1;
+  color: $riptide;
+  padding-left: 20px;
+}
+
+.headline--secondary {
+  font-size: $font-size-h4;
+  font-weight: $font-weight-light;
+  padding-left: 10px;
+}
+
+p {
+  font-size: $font-size-normal;
+}
+
+.blockquote {
+  font-size: $font-size-blockquote;
+  font-style: italic;
+  border-width: 0 0 0 10px;
+  border-color: $riptide;
+  border-style: solid;
+  border-radius: $br-round-corners;
+  padding-left: 20px;
+}
