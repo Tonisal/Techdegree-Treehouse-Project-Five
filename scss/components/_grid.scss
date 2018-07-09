@@ -10,7 +10,8 @@
 .grid__row {
   width: 100%;
   margin-bottom: 50px;
-  display: flex;
+  @include flexbox();
+
   flex-wrap: wrap;
 
   @include mq(medium) {
